@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반응형 웹페이지</title>
+<style>
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 미디어 쿼리를 사용하여 반응형 스타일 적용 */
+/* @media (min-width: 768px) {
+    .content {
+        text-align: left;
+    }
+} */
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>반응형 웹페이지</h1>
+</div>
+
+<div class="navbar">
+    <p>네비게이션</p>
+</div>
+
+<div class="content">
+    <h2>콘텐츠</h2>
+    <p>이곳에 웹페이지 콘텐츠를 넣으세요.</p>
+</div>
+
+<div class="footer">
+    <p>저작권 © 2024 반응형 웹페이지. 모든 권리 보유.</p>
+</div>
+
+<script>
+// JavaScript 코드를 이곳에 추가합니다.
+// 화면 크기에 따라 동적으로 요소를 변경할 수 있습니다.
+window.addEventListener('resize', function() {
+    if (window.innerWidth >= 768) {
+        document.querySelector('.content').style.textAlign = 'left';
+        document.querySelector('.content').style.color = 'red';
+    } else {
+        document.querySelector('.content').style.textAlign = 'center';
+        document.querySelector('.content').style.color = 'black';
+    }
+});
+</script>
+
+</body>
+</html>
